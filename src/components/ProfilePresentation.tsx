@@ -2,34 +2,33 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { TypeAnimation } from "react-type-animation";
 import Mario from "../global/mario.png";
 
+function TextAnimated() {
+    return (
+        <TypeAnimation
+            sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "Developer",
+                4000, // wait 1s before replacing "Mice" with "Hamsters"
+                "Android Developer",
+                4000,
+                "Web Developer",
+                4000,
+                "Backend Developer",
+                4000,
+                "Full Stack Developer",
+            ]}
+            wrapper="h3"
+            speed={50}
+            style={{
+                fontSize: "1em",
+                display: "inline-block",
+                color: "rgb(49 196 141)",
+            }}
+            repeat={Infinity}
+        />
+    );
+}
 const ProfilePresentation = () => {
-    const TextAnimated = () => {
-        return (
-            <TypeAnimation
-                sequence={[
-                    // Same substring at the start will only be typed out once, initially
-                    "Developer",
-                    4000, // wait 1s before replacing "Mice" with "Hamsters"
-                    "Android Developer",
-                    4000,
-                    "Web Developer",
-                    4000,
-                    "Backend Developer",
-                    4000,
-                    "Full Stack Developer",
-                ]}
-                wrapper="h3"
-                speed={50}
-                style={{
-                    fontSize: "1em",
-                    display: "inline-block",
-                    color: "rgb(49 196 141)",
-                }}
-                repeat={Infinity}
-            />
-        );
-    };
-
     return (
         <section id="profile" className="min-h-screen">
             <div className="text-center">
