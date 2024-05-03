@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@100;200;300;400;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,
+#root,
+.app,
+.content {
+    height: 100%;
+    width: 100%;
+    font-family: Epilogue, Poppins, Monserrat, sans-serif;
+}
+
+.app {
+    display: flex;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #555;
+}
+
+.epilogue-100 {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.epilogue-400 {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.epilogue-600 {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.epilogue-700 {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
