@@ -59,5 +59,18 @@ module.exports = {
             customFont: ["Epilogue", "Poppins", "Montserrat", "sans-serif"],
         },
     },
-    plugins: [require("flowbite/plugin")],
+    plugins: [
+        require("flowbite/plugin"),
+        function ({ addUtilities }) {
+            addUtilities({
+                ".no-scrollbar::-webkit-scrollbar": {
+                    display: "none",
+                },
+                ".no-scrollbar": {
+                    "-ms-overflow-style": "none",
+                    "scrollbar-width": "none",
+                },
+            });
+        },
+    ],
 };
